@@ -11,7 +11,7 @@ require (
 	github.com/go-chi/render v1.0.3
 	github.com/go-sql-driver/mysql v1.6.0
 	github.com/golang/freetype v0.0.0-20170609003504-e2365dfdc4a0
-	github.com/gorilla/securecookie v1.1.1
+	github.com/gorilla/securecookie v1.1.2
 	github.com/gorilla/sessions v1.2.1
 	github.com/lib/pq v1.10.4
 	github.com/oklog/ulid/v2 v2.0.2
