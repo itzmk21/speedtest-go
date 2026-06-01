@@ -14,7 +14,7 @@ FROM scratch
 WORKDIR /app
 COPY --from=build_base /build/speedtest ./
 # remember sensitive something will be here
-COPY settings.toml ./ 
+COPY settings.toml ./
 
 EXPOSE 8080
 

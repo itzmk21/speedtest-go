@@ -32,7 +32,7 @@ database_port = ""
 
 # if you use `bolt` as database, set database_file to database file location
 # if you use `sqlite` as database, set database_file to database file location
-database_file = "speedtest_telemetry.db"
+database_file = "data/speedtest_telemetry.db"
 
 # GeoIP offline database (.mmdb format) for ISP and country detection when ipinfo.io API is not available
 # This is used as a fallback, matching the PHP backend behavior.
