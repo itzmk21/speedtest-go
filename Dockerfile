@@ -13,8 +13,9 @@ RUN GOOS=$TARGETOS GOARCH=$TARGETARCH go build -ldflags "-w -s" -trimpath -build
 FROM scratch
 WORKDIR /app
 COPY --from=build_base /build/speedtest ./
-COPY settings.toml ./
+# remember sensitive something will be here
+COPY settings.toml ./ 
 
-EXPOSE 8989
+EXPOSE 8080
 
 CMD ["./speedtest"]
