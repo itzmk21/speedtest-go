@@ -1,0 +1,6 @@
+services:
+  app-builder:
+    image: ghcr.io/itzmk21/speedtest-go:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
