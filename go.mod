@@ -16,7 +16,7 @@ require (
 	github.com/lib/pq v1.10.4
 	github.com/oklog/ulid/v2 v2.0.2
 	github.com/oschwald/maxminddb-golang v1.13.1
-	github.com/pires/go-proxyproto v0.6.1
+	github.com/pires/go-proxyproto v0.12.0
 	github.com/sirupsen/logrus v1.8.1
 	github.com/spf13/viper v1.10.1
 	github.com/umahmood/haversine v0.0.0-20151105152445-808ab04add26
@@ -48,7 +48,7 @@ require (
 	github.com/subosito/gotenv v1.2.0 // indirect
 	golang.org/x/crypto v0.0.0-20220622213112-05595931fe9d // indirect
 	golang.org/x/sys v0.42.0 // indirect
-	golang.org/x/text v0.3.7 // indirect
+	golang.org/x/text v0.24.0 // indirect
 	gopkg.in/check.v1 v1.0.0-20190902080502-41f04d3bba15 // indirect
 	gopkg.in/ini.v1 v1.66.2 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
