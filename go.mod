@@ -16,6 +16,7 @@ require (
 	github.com/lib/pq v1.12.3
 	github.com/oklog/ulid/v2 v2.1.1
 	github.com/oschwald/maxminddb-golang v1.13.1
+	github.com/oschwald/maxminddb-golang/v2 v2.3.0
 	github.com/pires/go-proxyproto v0.12.0
 	github.com/sirupsen/logrus v1.9.4
 	github.com/spf13/viper v1.21.0
