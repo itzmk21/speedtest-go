@@ -7,11 +7,12 @@ import (
 	"io/ioutil"
 	"net"
 	"net/http"
+	"net/netip"
 	"os"
 	"strconv"
 	"strings"
 
-	"github.com/oschwald/maxminddb-golang"
+	"github.com/oschwald/maxminddb-golang/v2"
 	log "github.com/sirupsen/logrus"
 	"github.com/umahmood/haversine"
 
@@ -19,9 +20,7 @@ import (
 	"github.com/librespeed/speedtest-go/results"
 )
 
-var (
-	serverCoord haversine.Coord
-)
+var serverCoord haversine.Coord
 
 func getRandomData(length int) []byte {
 	data := make([]byte, length)
@@ -211,9 +210,18 @@ func getGeoIPData(ipStr string) *struct {
 		return nil
 	}
 
+	// Convert net.IP to netip.Addr required by maxminddb v2
+	addr, ok := netip.AddrFromSlice(ip)
+	if !ok {
+		log.Warnf("Failed to convert IP address: %s", ipStr)
+		return nil
+	}
+	// Unmap strips the IPv4-in-IPv6 prefix (::ffff:x.x.x.x) so lookups work correctly
+	addr = addr.Unmap()
+
 	// Try ipinfo.io offline database format first
 	var ipinfoResult map[string]interface{}
-	if err := geoIPReader.Lookup(ip, &ipinfoResult); err != nil {
+	if err := geoIPReader.Lookup(addr).Decode(&ipinfoResult); err != nil {
 		log.Warnf("GeoIP lookup failed: %s", err)
 		return nil
 	}
