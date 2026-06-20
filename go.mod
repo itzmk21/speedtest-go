@@ -21,7 +21,7 @@ require (
 	github.com/spf13/viper v1.21.0
 	github.com/umahmood/haversine v0.0.0-20151105152445-808ab04add26
 	go.etcd.io/bbolt v1.4.3
-	golang.org/x/image v0.42.0
+	golang.org/x/image v0.43.0
 	modernc.org/sqlite v1.52.0
 )
 
