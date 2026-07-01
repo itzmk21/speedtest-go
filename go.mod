@@ -15,7 +15,7 @@ require (
 	github.com/gorilla/sessions v1.4.0
 	github.com/lib/pq v1.12.3
 	github.com/oklog/ulid/v2 v2.1.1
-	github.com/oschwald/maxminddb-golang/v2 v2.4.0
+	github.com/oschwald/maxminddb-golang/v2 v2.4.1
 	github.com/pires/go-proxyproto v0.12.0
 	github.com/sirupsen/logrus v1.9.4
 	github.com/spf13/viper v1.21.0
@@ -45,7 +45,7 @@ require (
 	github.com/subosito/gotenv v1.6.0 // indirect
 	go.yaml.in/yaml/v3 v3.0.4 // indirect
 	golang.org/x/crypto v0.52.0 // indirect
-	golang.org/x/sys v0.45.0 // indirect
+	golang.org/x/sys v0.46.0 // indirect
 	golang.org/x/text v0.38.0 // indirect
 	gopkg.in/check.v1 v1.0.0-20190902080502-41f04d3bba15 // indirect
 	modernc.org/libc v1.73.4 // indirect
