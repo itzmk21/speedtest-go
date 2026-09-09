@@ -15,7 +15,7 @@ require (
 	github.com/gorilla/sessions v1.4.0
 	github.com/lib/pq v1.12.3
 	github.com/oklog/ulid/v2 v2.1.2
-	github.com/oschwald/maxminddb-golang/v2 v2.5.0
+	github.com/oschwald/maxminddb-golang/v2 v2.6.0
 	github.com/pires/go-proxyproto v0.15.0
 	github.com/sirupsen/logrus v1.10.2
 	github.com/spf13/viper v1.21.0
