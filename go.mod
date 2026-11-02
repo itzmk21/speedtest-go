@@ -22,7 +22,7 @@ require (
 	github.com/umahmood/haversine v0.0.0-20151105152445-808ab04add26
 	go.etcd.io/bbolt v1.5.0
 	golang.org/x/image v0.47.0
-	modernc.org/sqlite v1.61.0
+	modernc.org/sqlite v1.61.1
 )
 
 require (
