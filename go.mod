@@ -3,7 +3,7 @@ module github.com/librespeed/speedtest-go
 go 1.26.9
 
 require (
-	github.com/breml/rootcerts v0.3.7
+	github.com/breml/rootcerts v0.3.8
 	github.com/coreos/go-systemd/v22 v22.7.0
 	github.com/denisenkom/go-mssqldb v0.12.3
 	github.com/go-chi/chi/v5 v5.5.0
